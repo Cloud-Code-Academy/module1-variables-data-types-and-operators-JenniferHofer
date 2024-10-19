@@ -184,8 +184,8 @@ public with sharing class VariablesDataTypesOperators {
      * @return The number of milliseconds equivalent to the given number of minutes.
      */
     public static Integer convertMinutesToMilliseconds(Integer minutes) {
-        Integer MILLISECONDS_PER_MINUTE = 60000; // Make this value a constant
-        Integer milliseconds = (MILLISECONDS_PER_MINUTE * minutes);
+        Integer millisecondsPerMinute = 60000; // Make this value a constant
+        Integer milliseconds = (millisecondsPerMinute * minutes);
         return milliseconds; // Replace null with the variable you used to store the result
     }    
 
@@ -264,10 +264,10 @@ public with sharing class VariablesDataTypesOperators {
      * @return The temperature in Celsius equivalent to the given Fahrenheit temperature.
      */
     public static Double convertFahrenheitToCelsius(Double fahrenheit) {
-        final Double SUBTRACT_FACTOR = 32.0;
-        final Double MULTIPLY_FACTOR = 5.0;
-        final Double DIVIDE_FACTOR = 9.0;
-        Double celsius = ((fahrenheit - SUBTRACT_FACTOR) * MULTIPLY_FACTOR / DIVIDE_FACTOR);
+        final Double subtractFactor = 32.0;
+        final Double multiplyFactor = 5.0;
+        final Double divideFactor = 9.0;
+        Double celsius = ((fahrenheit - subtractFactor) * multiplyFactor / divideFactor);
     
         return celsius; // Replace null with the variable you used to store the result
     }
